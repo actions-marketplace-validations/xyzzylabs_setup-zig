@@ -1,6 +1,6 @@
 {
   "name": "setup-zig",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "private": true,
   "description": "GitHub Action that installs the Zig compiler and caches the global Zig cache directory.",
   "type": "module",
@@ -21,7 +21,7 @@
   "scripts": {
     "typecheck": "tsgo --project tsconfig.json",
     "test": "node --test 'test/*.test.ts'",
-    "build": "ncc build src/main.ts -o dist/main --license licenses.txt && ncc build src/post.ts -o dist/post --license licenses.txt",
+    "build": "node scripts/build.mjs",
     "verify": "npm run typecheck && npm run test && npm run build"
   },
   "keywords": [
@@ -33,16 +33,16 @@
     "minisign"
   ],
   "dependencies": {
-    "@actions/cache": "^6.0.1",
+    "@actions/cache": "^6.2.0",
     "@actions/core": "^3.0.1",
     "@actions/exec": "^3.0.0",
     "@actions/github": "^9.1.1",
     "@actions/tool-cache": "^4.0.0"
   },
   "devDependencies": {
-    "@types/node": "^24.0.0",
-    "@typescript/native-preview": "^7.0.0-dev.20260527.2",
-    "@vercel/ncc": "^0.38.4",
-    "typescript": "^6.0.3"
+    "@types/node": "^26.4.0",
+    "@typescript/native-preview": "^7.0.0-dev.20260707.2",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
   }
 }

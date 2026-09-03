@@ -2,6 +2,26 @@
 
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.0.3](https://github.com/xyzzylabs/setup-zig/compare/v1.0.2...v1.0.3) (2026-08-21)
+
+
+### Fixed
+
+* **deps:** bump @actions/cache to 6.2.0 and dev-deps; adapt to @types/node 26 ([#14](https://github.com/xyzzylabs/setup-zig/issues/14)) ([ee9dc3b](https://github.com/xyzzylabs/setup-zig/commit/ee9dc3b36d5e8d729f070fba62d6c1cf1283ce7e))
+* **deps:** bump brace-expansion to 1.1.18 ([#8](https://github.com/xyzzylabs/setup-zig/issues/8)) ([4b0bd01](https://github.com/xyzzylabs/setup-zig/commit/4b0bd01c32aaaa5311e3f21d1aef5fc0adf99bc2))
+
+## [1.0.2](https://github.com/xyzzylabs/setup-zig/compare/v1.0.1...v1.0.2) (2026-07-09)
+
+
+### Fixed
+
+* **deps:** bump @actions/cache to 6.1.0 to resolve undici advisory ([#7](https://github.com/xyzzylabs/setup-zig/issues/7)) ([ed5b607](https://github.com/xyzzylabs/setup-zig/commit/ed5b6073162f03f30994d993024b65f836dbecd7))
+
+
+### Documentation
+
+* correct README claim that dist/ is not committed ([#3](https://github.com/xyzzylabs/setup-zig/issues/3)) ([81642f2](https://github.com/xyzzylabs/setup-zig/commit/81642f230e83bc7d737b02d5b4144696304b3518))
+
 ## [1.0.1](https://github.com/xyzzylabs/setup-zig/compare/v1.0.0...v1.0.1) (2026-06-03)
 
 
